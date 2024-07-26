@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+#main{
+    height: 80%;
+    width: 80%;
+
+    /* background-color: rgba(38, 51, 94, 0.719); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    height: 420px;
+    width: 300px;
+    border: 2px solid rgba(65, 57, 57, 0.808);  
+    border-radius: 10px;
+    /* background-color: #c0c9ca10; */
+    padding: 10px;
+    border: 2px solid black;
+    /* box-shadow: 1px 6px 20px rgb(0, 0, 0), -1px -6px 20px rgb(0, 0, 0) ; */
+}
+#cal-screen{
+    height: 85px;
+    /* background-color: rgba(121, 121, 121, 0.342); */
+    border: 2px solid rgba(56, 59, 58, 0.973);
+    border-radius: 5px;
+    margin-bottom:10px ;
+     overflow: hidden;
+     padding-right: 10px;
+     box-shadow: 1px 2px 4px rgba(24, 21, 21, 0.822) , -1px -2px 4px rgba(32, 29, 29, 0.836);
+}
+#answer{
+    height: 100%;
+    color: rgb(31, 28, 28);
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-shadow: 1px 5px 10px rgb(168, 42, 42), -1px -5px 10px black; */
+    /* background-color: rgb(58, 58, 57); */
+}
+#buton{
+    height:280px;
+    /* background-color: rgb(129, 129, 129); */
+    display: flex;
+    flex-wrap: wrap;  
+    /* padding-left:8px ; */
+}
+.btn{
+    height:45px;
+    width: 53px;
+    /* border: 2px solid rgb(37, 37, 37); */
+    /* background-color: rgb(146, 146, 146); */
+    margin: 8px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 1px 3px 5px black , -1px -3px 5px black;
+}
+.btn:hover{
+    border: 2px solid rgba(255, 255, 255, 0.651);
+    box-shadow:inset 1px 3px 10px rgba(0, 0, 0, 0.855) ,inset -1px -3px 10px rgba(0, 0, 0, 0.829);
+    cursor: pointer;
+    font-size: medium;
+    color: rgba(21, 10, 70, 0.986);
+    /* box-shadow: 1px 3px 5px rgba(255, 253, 253, 0.329) , -1px -3px 50px rgb(255, 255, 255);
+  */
+}
+#buton #eqal{
+    width: 122px;  
+}
+#buton #ac{
+    width: 122px;
+    margin-right:8px;  
+}
+ 
+@media (max-width : 600px) {
+   
+    #container{
+        height: 50vh;
+        width: 80vw;
+    }
+    #cal-screen{
+     /* background-color: rgb(43, 43, 158);         */
+        height:10vh ;
+        width: 72vw;
+        margin-bottom: 5vw;
+
+        
+    }
+    #buton{
+        height:35vh;
+
+    }
+    .btn{
+        height:6vh;
+        width:16vw;
+        /* border: 2px solid rgb(37, 37, 37); */
+        /* background-color: rgb(146, 146, 146); */
+        margin:1vw;
+    }
+    #buton #eqal{
+        width:33vw;  
+    }
+    #buton #ac{
+        width: 33vw;
+        margin: 1vw;
+      
+    }
+}
+/* } */
